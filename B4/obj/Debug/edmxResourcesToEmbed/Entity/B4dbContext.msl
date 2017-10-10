@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Bai4TTNModelStoreContainer" CdmEntityContainer="Bai4TTNEntities">
+    <EntitySetMapping Name="Detail_PN">
+      <EntityTypeMapping TypeName="Bai4TTNModel.Detail_PN">
+        <MappingFragment StoreEntitySet="Detail_PN">
+          <ScalarProperty Name="Ma_PN" ColumnName="Ma_PN" />
+          <ScalarProperty Name="Ma_hh" ColumnName="Ma_hh" />
+          <ScalarProperty Name="Ma_kho" ColumnName="Ma_kho" />
+          <ScalarProperty Name="So_luong" ColumnName="So_luong" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Detail_PX">
+      <EntityTypeMapping TypeName="Bai4TTNModel.Detail_PX">
+        <MappingFragment StoreEntitySet="Detail_PX">
+          <ScalarProperty Name="Ma_px" ColumnName="Ma_px" />
+          <ScalarProperty Name="Ma_hh" ColumnName="Ma_hh" />
+          <ScalarProperty Name="Ma_kho" ColumnName="Ma_kho" />
+          <ScalarProperty Name="So_luong" ColumnName="So_luong" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Hangs">
+      <EntityTypeMapping TypeName="Bai4TTNModel.Hang">
+        <MappingFragment StoreEntitySet="Hang">
+          <ScalarProperty Name="Ma_hh" ColumnName="Ma_hh" />
+          <ScalarProperty Name="Ten_hh" ColumnName="Ten_hh" />
+          <ScalarProperty Name="Don_vi" ColumnName="Don_vi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Khoes">
+      <EntityTypeMapping TypeName="Bai4TTNModel.Kho">
+        <MappingFragment StoreEntitySet="Kho">
+          <ScalarProperty Name="Ma_kho" ColumnName="Ma_kho" />
+          <ScalarProperty Name="Ten_kho" ColumnName="Ten_kho" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PhieuNhaps">
+      <EntityTypeMapping TypeName="Bai4TTNModel.PhieuNhap">
+        <MappingFragment StoreEntitySet="PhieuNhap">
+          <ScalarProperty Name="Ma_PN" ColumnName="Ma_PN" />
+          <ScalarProperty Name="Ngay_nhap" ColumnName="Ngay_nhap" />
+          <ScalarProperty Name="Ma_kho" ColumnName="Ma_kho" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PhieuXuats">
+      <EntityTypeMapping TypeName="Bai4TTNModel.PhieuXuat">
+        <MappingFragment StoreEntitySet="PhieuXuat">
+          <ScalarProperty Name="Ma_px" ColumnName="Ma_px" />
+          <ScalarProperty Name="Ngay_xuat" ColumnName="Ngay_xuat" />
+          <ScalarProperty Name="Ma_kho" ColumnName="Ma_kho" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="Bai4TTNModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Pass" ColumnName="Pass" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

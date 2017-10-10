@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Bai4TTNModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Detail_PN">
+    <Key>
+      <PropertyRef Name="Ma_PN" />
+    </Key>
+    <Property Name="Ma_PN" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Ma_hh" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Ma_kho" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="So_luong" Type="Int32" />
+    <NavigationProperty Name="Hang" Relationship="Self.FK_Detail_PN_Hang" FromRole="Detail_PN" ToRole="Hang" />
+    <NavigationProperty Name="PhieuNhap" Relationship="Self.FK_PhieuNhap_Detail_PN" FromRole="Detail_PN" ToRole="PhieuNhap" />
+  </EntityType>
+  <EntityType Name="Detail_PX">
+    <Key>
+      <PropertyRef Name="Ma_px" />
+    </Key>
+    <Property Name="Ma_px" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Ma_hh" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Ma_kho" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="So_luong" Type="Int32" />
+    <NavigationProperty Name="Hang" Relationship="Self.FK_Detail_PX_Hang" FromRole="Detail_PX" ToRole="Hang" />
+    <NavigationProperty Name="PhieuXuat" Relationship="Self.FK_Detail_PX_PhieuXuat" FromRole="Detail_PX" ToRole="PhieuXuat" />
+  </EntityType>
+  <EntityType Name="Hang">
+    <Key>
+      <PropertyRef Name="Ma_hh" />
+    </Key>
+    <Property Name="Ma_hh" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Ten_hh" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Don_vi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Detail_PN" Relationship="Self.FK_Detail_PN_Hang" FromRole="Hang" ToRole="Detail_PN" />
+    <NavigationProperty Name="Detail_PX" Relationship="Self.FK_Detail_PX_Hang" FromRole="Hang" ToRole="Detail_PX" />
+  </EntityType>
+  <EntityType Name="Kho">
+    <Key>
+      <PropertyRef Name="Ma_kho" />
+    </Key>
+    <Property Name="Ma_kho" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Ten_kho" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="PhieuNhaps" Relationship="Self.FK_PhieuNhap_Kho" FromRole="Kho" ToRole="PhieuNhap" />
+    <NavigationProperty Name="PhieuXuats" Relationship="Self.FK_PhieuXuat_Kho" FromRole="Kho" ToRole="PhieuXuat" />
+  </EntityType>
+  <EntityType Name="PhieuNhap">
+    <Key>
+      <PropertyRef Name="Ma_PN" />
+    </Key>
+    <Property Name="Ma_PN" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Ngay_nhap" Type="DateTime" Precision="3" />
+    <Property Name="Ma_kho" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="Detail_PN" Relationship="Self.FK_PhieuNhap_Detail_PN" FromRole="PhieuNhap" ToRole="Detail_PN" />
+    <NavigationProperty Name="Kho" Relationship="Self.FK_PhieuNhap_Kho" FromRole="PhieuNhap" ToRole="Kho" />
+  </EntityType>
+  <EntityType Name="PhieuXuat">
+    <Key>
+      <PropertyRef Name="Ma_px" />
+    </Key>
+    <Property Name="Ma_px" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Ngay_xuat" Type="DateTime" Precision="3" />
+    <Property Name="Ma_kho" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="Detail_PX" Relationship="Self.FK_Detail_PX_PhieuXuat" FromRole="PhieuXuat" ToRole="Detail_PX" />
+    <NavigationProperty Name="Kho" Relationship="Self.FK_PhieuXuat_Kho" FromRole="PhieuXuat" ToRole="Kho" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="Pass" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_Detail_PN_Hang">
+    <End Role="Hang" Type="Self.Hang" Multiplicity="0..1" />
+    <End Role="Detail_PN" Type="Self.Detail_PN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hang">
+        <PropertyRef Name="Ma_hh" />
+      </Principal>
+      <Dependent Role="Detail_PN">
+        <PropertyRef Name="Ma_hh" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PhieuNhap_Detail_PN">
+    <End Role="Detail_PN" Type="Self.Detail_PN" Multiplicity="1" />
+    <End Role="PhieuNhap" Type="Self.PhieuNhap" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Detail_PN">
+        <PropertyRef Name="Ma_PN" />
+      </Principal>
+      <Dependent Role="PhieuNhap">
+        <PropertyRef Name="Ma_PN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Detail_PX_Hang">
+    <End Role="Hang" Type="Self.Hang" Multiplicity="0..1" />
+    <End Role="Detail_PX" Type="Self.Detail_PX" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hang">
+        <PropertyRef Name="Ma_hh" />
+      </Principal>
+      <Dependent Role="Detail_PX">
+        <PropertyRef Name="Ma_hh" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Detail_PX_PhieuXuat">
+    <End Role="PhieuXuat" Type="Self.PhieuXuat" Multiplicity="1" />
+    <End Role="Detail_PX" Type="Self.Detail_PX" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="PhieuXuat">
+        <PropertyRef Name="Ma_px" />
+      </Principal>
+      <Dependent Role="Detail_PX">
+        <PropertyRef Name="Ma_px" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PhieuNhap_Kho">
+    <End Role="Kho" Type="Self.Kho" Multiplicity="0..1" />
+    <End Role="PhieuNhap" Type="Self.PhieuNhap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kho">
+        <PropertyRef Name="Ma_kho" />
+      </Principal>
+      <Dependent Role="PhieuNhap">
+        <PropertyRef Name="Ma_kho" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PhieuXuat_Kho">
+    <End Role="Kho" Type="Self.Kho" Multiplicity="0..1" />
+    <End Role="PhieuXuat" Type="Self.PhieuXuat" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kho">
+        <PropertyRef Name="Ma_kho" />
+      </Principal>
+      <Dependent Role="PhieuXuat">
+        <PropertyRef Name="Ma_kho" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Bai4TTNEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Detail_PN" EntityType="Self.Detail_PN" />
+    <EntitySet Name="Detail_PX" EntityType="Self.Detail_PX" />
+    <EntitySet Name="Hangs" EntityType="Self.Hang" />
+    <EntitySet Name="Khoes" EntityType="Self.Kho" />
+    <EntitySet Name="PhieuNhaps" EntityType="Self.PhieuNhap" />
+    <EntitySet Name="PhieuXuats" EntityType="Self.PhieuXuat" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <AssociationSet Name="FK_Detail_PN_Hang" Association="Self.FK_Detail_PN_Hang">
+      <End Role="Hang" EntitySet="Hangs" />
+      <End Role="Detail_PN" EntitySet="Detail_PN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PhieuNhap_Detail_PN" Association="Self.FK_PhieuNhap_Detail_PN">
+      <End Role="Detail_PN" EntitySet="Detail_PN" />
+      <End Role="PhieuNhap" EntitySet="PhieuNhaps" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Detail_PX_Hang" Association="Self.FK_Detail_PX_Hang">
+      <End Role="Hang" EntitySet="Hangs" />
+      <End Role="Detail_PX" EntitySet="Detail_PX" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Detail_PX_PhieuXuat" Association="Self.FK_Detail_PX_PhieuXuat">
+      <End Role="PhieuXuat" EntitySet="PhieuXuats" />
+      <End Role="Detail_PX" EntitySet="Detail_PX" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PhieuNhap_Kho" Association="Self.FK_PhieuNhap_Kho">
+      <End Role="Kho" EntitySet="Khoes" />
+      <End Role="PhieuNhap" EntitySet="PhieuNhaps" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PhieuXuat_Kho" Association="Self.FK_PhieuXuat_Kho">
+      <End Role="Kho" EntitySet="Khoes" />
+      <End Role="PhieuXuat" EntitySet="PhieuXuats" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

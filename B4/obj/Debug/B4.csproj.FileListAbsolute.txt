@@ -1,0 +1,25 @@
+F:\Công nghệ web\MVC\B4\B4\bin\Debug\B4.exe.config
+F:\Công nghệ web\MVC\B4\B4\bin\Debug\B4.exe
+F:\Công nghệ web\MVC\B4\B4\bin\Debug\B4.pdb
+F:\Công nghệ web\MVC\B4\B4\bin\Debug\EntityFramework.dll
+F:\Công nghệ web\MVC\B4\B4\bin\Debug\EntityFramework.SqlServer.dll
+F:\Công nghệ web\MVC\B4\B4\bin\Debug\EntityFramework.xml
+F:\Công nghệ web\MVC\B4\B4\bin\Debug\EntityFramework.SqlServer.xml
+F:\Công nghệ web\MVC\B4\B4\obj\Debug\B4.csprojResolveAssemblyReference.cache
+F:\Công nghệ web\MVC\B4\B4\obj\Debug\B4.FormKho.resources
+F:\Công nghệ web\MVC\B4\B4\obj\Debug\B4.Formmain.resources
+F:\Công nghệ web\MVC\B4\B4\obj\Debug\B4.FormNhap.resources
+F:\Công nghệ web\MVC\B4\B4\obj\Debug\B4.FormPhieuNhap.resources
+F:\Công nghệ web\MVC\B4\B4\obj\Debug\B4.FormPhieuXuat.resources
+F:\Công nghệ web\MVC\B4\B4\obj\Debug\B4.Formtimkiem.resources
+F:\Công nghệ web\MVC\B4\B4\obj\Debug\B4.FormXuat.resources
+F:\Công nghệ web\MVC\B4\B4\obj\Debug\B4.Form1.resources
+F:\Công nghệ web\MVC\B4\B4\obj\Debug\B4.Formhanghoa.resources
+F:\Công nghệ web\MVC\B4\B4\obj\Debug\B4.Properties.Resources.resources
+F:\Công nghệ web\MVC\B4\B4\obj\Debug\B4.csproj.GenerateResource.Cache
+F:\Công nghệ web\MVC\B4\B4\obj\Debug\B4.exe
+F:\Công nghệ web\MVC\B4\B4\obj\Debug\B4.pdb
+F:\Công nghệ web\MVC\B4\B4\obj\Debug\B4.FormHuongdan.resources
+H:\B4\B4\bin\Debug\B4.exe.config
+H:\B4\B4\obj\Debug\B4.exe
+H:\B4\B4\obj\Debug\B4.pdb
