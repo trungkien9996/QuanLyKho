@@ -29,3 +29,15 @@ C:\Users\Rob Luccy\Documents\GitHub\QuanLyKho\B4\obj\Debug\B4.pdb
 D:\GITHUB\QuanLyKho\B4\bin\Debug\B4.exe.config
 D:\GITHUB\QuanLyKho\B4\obj\Debug\B4.exe
 D:\GITHUB\QuanLyKho\B4\obj\Debug\B4.pdb
+D:\GITHUB\QuanLyKho\B4\obj\Debug\B4.csprojResolveAssemblyReference.cache
+D:\GITHUB\QuanLyKho\B4\obj\Debug\B4.FormKho.resources
+D:\GITHUB\QuanLyKho\B4\obj\Debug\B4.Formmain.resources
+D:\GITHUB\QuanLyKho\B4\obj\Debug\B4.FormNhap.resources
+D:\GITHUB\QuanLyKho\B4\obj\Debug\B4.FormPhieuNhap.resources
+D:\GITHUB\QuanLyKho\B4\obj\Debug\B4.FormPhieuXuat.resources
+D:\GITHUB\QuanLyKho\B4\obj\Debug\B4.Formtimkiem.resources
+D:\GITHUB\QuanLyKho\B4\obj\Debug\B4.FormXuat.resources
+D:\GITHUB\QuanLyKho\B4\obj\Debug\B4.Form1.resources
+D:\GITHUB\QuanLyKho\B4\obj\Debug\B4.Formhanghoa.resources
+D:\GITHUB\QuanLyKho\B4\obj\Debug\B4.Properties.Resources.resources
+D:\GITHUB\QuanLyKho\B4\obj\Debug\B4.csproj.GenerateResource.Cache
