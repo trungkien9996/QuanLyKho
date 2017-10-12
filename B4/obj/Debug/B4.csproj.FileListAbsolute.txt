@@ -26,3 +26,6 @@ H:\B4\B4\obj\Debug\B4.pdb
 C:\Users\Rob Luccy\Documents\GitHub\QuanLyKho\B4\bin\Debug\B4.exe.config
 C:\Users\Rob Luccy\Documents\GitHub\QuanLyKho\B4\obj\Debug\B4.exe
 C:\Users\Rob Luccy\Documents\GitHub\QuanLyKho\B4\obj\Debug\B4.pdb
+D:\GITHUB\QuanLyKho\B4\bin\Debug\B4.exe.config
+D:\GITHUB\QuanLyKho\B4\obj\Debug\B4.exe
+D:\GITHUB\QuanLyKho\B4\obj\Debug\B4.pdb
