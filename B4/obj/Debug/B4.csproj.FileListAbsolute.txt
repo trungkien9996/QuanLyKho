@@ -56,3 +56,12 @@ C:\Users\FPTShop\Documents\GitHub\QuanLyKho\B4\bin\Debug\EntityFramework.SqlServ
 C:\Users\FPTShop\Documents\GitHub\QuanLyKho\B4\bin\Debug\EntityFramework.xml
 C:\Users\FPTShop\Documents\GitHub\QuanLyKho\B4\bin\Debug\EntityFramework.SqlServer.xml
 >>>>>>> 849e289f66a956fc1e1a394264d82690026bc26f
+C:\Users\Zork\Documents\GitHub\QuanLyKho\B4\bin\Debug\B4.exe.config
+C:\Users\Zork\Documents\GitHub\QuanLyKho\B4\obj\Debug\B4.exe
+C:\Users\Zork\Documents\GitHub\QuanLyKho\B4\obj\Debug\B4.pdb
+C:\Users\Zork\Documents\GitHub\QuanLyKho\B4\bin\Debug\B4.exe
+C:\Users\Zork\Documents\GitHub\QuanLyKho\B4\bin\Debug\B4.pdb
+C:\Users\Zork\Documents\GitHub\QuanLyKho\B4\bin\Debug\EntityFramework.dll
+C:\Users\Zork\Documents\GitHub\QuanLyKho\B4\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Zork\Documents\GitHub\QuanLyKho\B4\bin\Debug\EntityFramework.xml
+C:\Users\Zork\Documents\GitHub\QuanLyKho\B4\bin\Debug\EntityFramework.SqlServer.xml
