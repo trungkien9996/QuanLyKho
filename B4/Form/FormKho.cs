@@ -33,7 +33,7 @@ namespace B4
                     tb_makho.Text = "";
                     tb_tenkho.Text = "";
                 }
-                catch (Exception exp)
+                catch(Exception exp)
                 {
                     MessageBox.Show(exp.ToString(), "ERROR");
                 }
