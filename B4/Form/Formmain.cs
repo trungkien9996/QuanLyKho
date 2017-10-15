@@ -16,6 +16,7 @@ namespace B4
         {
             InitializeComponent();
         }
+
         private void xuấtKhoToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             this.Hide();

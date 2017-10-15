@@ -41,7 +41,7 @@ namespace B4
             {
                 try
                 {
-                    Detail_PX kho = new Detail_PX() { Ma_px = comboBox1.SelectedValue.ToString(), Ma_kho = comboBox1.SelectedValue.ToString(), Ma_hh = tb_mahang.Text };
+                    Detail_PX kho = new Detail_PX() { Ma_px = comboBox1.SelectedValue.ToString(), Ma_kho = comboBox1.SelectedValue.ToString(), Ma_hh= tb_mahang.Text };
                     db.Detail_PX.Add(kho);
                     db.SaveChanges();
                     MessageBox.Show("Thêm mới thành công", "Message");

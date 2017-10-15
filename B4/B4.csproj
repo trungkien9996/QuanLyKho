@@ -9,10 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>B4</RootNamespace>
     <AssemblyName>B4</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -58,6 +57,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\Detail_PNDao.cs" />
+    <Compile Include="Data\Detail_PXDao.cs" />
+    <Compile Include="Data\HangDao.cs" />
+    <Compile Include="Data\KhoDao.cs" />
+    <Compile Include="Data\PhieuNhapDao.cs" />
+    <Compile Include="Data\PhieuXuatDao.cs" />
     <Compile Include="Data\UserDao.cs" />
     <Compile Include="Entity\B4dbContext.Context.cs">
       <AutoGen>True</AutoGen>
@@ -186,7 +191,6 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <EntityDeploy Include="Entity\B4dbContext.edmx">
       <Generator>EntityModelCodeGenerator</Generator>

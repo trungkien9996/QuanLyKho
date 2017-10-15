@@ -38,7 +38,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btthoat
@@ -97,7 +96,7 @@
             // 
             // tb_mahh
             // 
-            this.tb_mahh.Location = new System.Drawing.Point(159, 51);
+            this.tb_mahh.Location = new System.Drawing.Point(159, 49);
             this.tb_mahh.Name = "tb_mahh";
             this.tb_mahh.Size = new System.Drawing.Size(141, 20);
             this.tb_mahh.TabIndex = 15;
@@ -123,28 +122,17 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(89, 54);
+            this.label1.Location = new System.Drawing.Point(89, 52);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 13);
             this.label1.TabIndex = 12;
             this.label1.Text = "Mã Hàng";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(102, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(226, 31);
-            this.label4.TabIndex = 22;
-            this.label4.Text = "Quản lý hàng hóa";
             // 
             // Formhanghoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(420, 221);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.btthoat);
             this.Controls.Add(this.btxoa);
             this.Controls.Add(this.btsua);
@@ -174,6 +162,5 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label4;
     }
 }

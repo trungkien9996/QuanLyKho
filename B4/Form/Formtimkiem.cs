@@ -56,4 +56,3 @@ namespace B4
         }
     }
 }
-

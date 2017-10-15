@@ -22,6 +22,7 @@ namespace B4
         {
             if (MessageBox.Show("Do you want to quit?", "Message", MessageBoxButtons.OKCancel) == DialogResult.Cancel) e.Cancel = true;
         }
+
         private void button1_Click(object sender, EventArgs e)
         {
             string user = textBox1.Text;

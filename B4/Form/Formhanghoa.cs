@@ -26,7 +26,7 @@ namespace B4
             {
                 try
                 {
-                    Hang kho = new Hang() { Ma_hh = tb_mahh.Text, Ten_hh = tb_tenhh.Text, Don_vi = tb_donvi.Text };
+                    Hang kho = new Hang() { Ma_hh = tb_mahh.Text, Ten_hh = tb_tenhh.Text,Don_vi= tb_donvi.Text };
                     db.Hangs.Add(kho);
                     db.SaveChanges();
                     MessageBox.Show("Thêm mới thành công", "Message");
@@ -73,7 +73,7 @@ namespace B4
                 try
                 {
                     string id = tb_mahh.Text;
-                    Hang sv = db.Hangs.Where(p => p.Ma_hh == id && p.Ten_hh == tb_tenhh.Text && p.Don_vi == tb_donvi.Text).SingleOrDefault();
+                    Hang sv = db.Hangs.Where(p => p.Ma_hh == id && p.Ten_hh == tb_tenhh.Text && p.Don_vi==tb_donvi.Text).SingleOrDefault();
                     db.Hangs.Remove(sv);
                     db.SaveChanges();
                     tb_mahh.Text = "";

@@ -103,7 +103,7 @@ namespace B4
 
         private void bt_nhập_Click(object sender, EventArgs e)
         {
-            add();
+            add(); 
         }
 
         private void bt_thoat_Click(object sender, EventArgs e)
