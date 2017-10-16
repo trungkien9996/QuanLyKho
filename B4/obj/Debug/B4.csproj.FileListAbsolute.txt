@@ -50,3 +50,6 @@ C:\Users\Zork\Documents\GitHub\QuanLyKho\B4\obj\Debug\B4.pdb
 E:\forgithub\QuanLyKho\B4\bin\Debug\B4.exe.config
 E:\forgithub\QuanLyKho\B4\obj\Debug\B4.exe
 E:\forgithub\QuanLyKho\B4\obj\Debug\B4.pdb
+C:\Users\FPTShop\Documents\GitHub\QuanLyKho\B4\bin\Debug\B4.exe.config
+C:\Users\FPTShop\Documents\GitHub\QuanLyKho\B4\obj\Debug\B4.exe
+C:\Users\FPTShop\Documents\GitHub\QuanLyKho\B4\obj\Debug\B4.pdb
