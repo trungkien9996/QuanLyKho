@@ -47,3 +47,6 @@ C:\Users\Zork\Documents\GitHub\QuanLyKho\B4\bin\Debug\B4.exe.config
 C:\Users\Zork\Documents\GitHub\QuanLyKho\B4\obj\Debug\B4.exe
 C:\Users\Zork\Documents\GitHub\QuanLyKho\B4\obj\Debug\B4.pdb
 >>>>>>> 58eda895e7c23b360d324ee535a54c3c9b1edbd8
+E:\forgithub\QuanLyKho\B4\bin\Debug\B4.exe.config
+E:\forgithub\QuanLyKho\B4\obj\Debug\B4.exe
+E:\forgithub\QuanLyKho\B4\obj\Debug\B4.pdb

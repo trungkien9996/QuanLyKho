@@ -46,9 +46,10 @@
             this.Ma_hh,
             this.Ten_hh,
             this.Don_vi});
-            this.dataGridView1.Location = new System.Drawing.Point(5, 99);
+            this.dataGridView1.Location = new System.Drawing.Point(7, 122);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(547, 237);
+            this.dataGridView1.Size = new System.Drawing.Size(729, 292);
             this.dataGridView1.TabIndex = 15;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -72,9 +73,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(213, 70);
+            this.button2.Location = new System.Drawing.Point(396, 70);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(100, 28);
             this.button2.TabIndex = 14;
             this.button2.Text = "Tất cả";
             this.button2.UseVisualStyleBackColor = true;
@@ -82,9 +84,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(132, 70);
+            this.button1.Location = new System.Drawing.Point(530, 70);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 13;
             this.button1.Text = "Lọc";
             this.button1.UseVisualStyleBackColor = true;
@@ -93,30 +96,33 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(177, 38);
+            this.label1.Location = new System.Drawing.Point(236, 19);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(195, 23);
+            this.label1.Size = new System.Drawing.Size(260, 28);
             this.label1.TabIndex = 11;
             this.label1.Text = "DANH SÁCH HÀNG HÓA";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(5, 70);
+            this.textBox1.Location = new System.Drawing.Point(13, 70);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 20);
+            this.textBox1.Size = new System.Drawing.Size(344, 22);
             this.textBox1.TabIndex = 16;
             // 
             // Formtimkiem
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(557, 349);
+            this.ClientSize = new System.Drawing.Size(743, 430);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Formtimkiem";
             this.Text = "Tìm Kiếm";
             this.Load += new System.EventHandler(this.Formtimkiem_Load);
