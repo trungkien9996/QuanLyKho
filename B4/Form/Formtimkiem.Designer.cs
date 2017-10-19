@@ -109,7 +109,7 @@
             this.textBox1.Location = new System.Drawing.Point(7, 86);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(489, 22);
+            this.textBox1.Size = new System.Drawing.Size(344, 22);
             this.textBox1.TabIndex = 16;
             // 
             // Formtimkiem
