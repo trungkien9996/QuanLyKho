@@ -73,7 +73,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(379, 87);
+            this.button2.Location = new System.Drawing.Point(396, 70);
             this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 28);
@@ -84,7 +84,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(379, 51);
+            this.button1.Location = new System.Drawing.Point(530, 70);
             this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 28);
